@@ -1,0 +1,28 @@
+.container{
+    margin: 15px;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.container_desc{
+    flex-direction: column;
+    padding-left: 15px;
+    max-width: 60%;
+}
+.container_img{
+    max-width: 35%;
+    border-radius: 20px;
+}
+.container h1{
+    margin: 0;
+}
+.container h3{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+@media (max-width:600px) {
+    .container p{
+    }
+    
+}
