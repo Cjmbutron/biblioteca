@@ -5,21 +5,21 @@
             "titulo": "meditaciones",
             "autor": "marco aurelio",
             "descripciones": "Las Meditaciones del emperador Marco Aurelio recopilan las anotaciones y apuntes que hacia el final de su vida fue tomando al hilo de las circunstancias, de los caprichos de la imaginación y del discurrir de la propia existencia.",
-            "img": "https://org-rcrx.vercel.app/img/header.png"
+            "img": "https://github.com/Cjmbutron/biblioteca/blob/main/src/portadas/meditaciones.jpeg"
         },
         {
             "id": 2,
             "titulo": "Bhagavad gita",
             "autor": "Filosofia india",
             "descripciones": "El «Bhagavad Gita» es un fragmento de 700 versos inscrito en el libro sexto del océano épico lírico del «Mahabharata». Corresponde al diálogo que mantienen el Dios Krishna y Arjuna -comandante del ejército de los Pandava- en el momento anterior a la batalla.",
-            "img": "./public/logo192.png"
+            "img": "https://github.com/Cjmbutron/biblioteca/blob/main/src/portadas/bhagavad-gita.jpeg"
         },
         {
             "id": 3,
             "titulo": "la voz del silencio",
             "autor": "Filosofia del Tibet",
             "descripciones": "Este libro narra el viaje del discípulo a lo largo del sendero de la vida, cuenta los peligros que lo acechan y advierte acerca de las precauciones que hay que observar en el camino.",
-            "img": "./public/logo192.png"
+            "img": "https://github.com/Cjmbutron/biblioteca/blob/main/src/portadas/la-voz-del-silencio.webp"
         }
     ] 
 }

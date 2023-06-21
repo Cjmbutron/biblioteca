@@ -38,10 +38,8 @@ const Listalibros = () => {
           titulo={prop.titulo}
           autor={prop.autor}
           descripciones={prop.descripciones}
-          // imglibro={require(`${prop.img}`).default}
           img={prop.img}
          />
-         {prop.img}
          </div>
         })
            }  
