@@ -24,7 +24,6 @@ const Formulario =(prop)=>{
                     <a className={style.button} href="#solicitar">Solicitar</a>
                 </div>
             <div id="solicitar" className={style.overlay}>
-                {console.log(prop.titulo)}
             <p>{prop.titulo}</p>
                 <div className={style.popup} >
                     <a className={style.close} href="#">&times;</a>

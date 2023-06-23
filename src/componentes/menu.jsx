@@ -5,9 +5,12 @@ import { useState } from "react"
 const setQuery =(e) =>{
     const val=e.target.value
 }
- 
-const Menu = ( headProps) =>{
-    const [busqueda, setBusqueda] = useState('')
+type HeaderProps = {
+    query: string;
+    setQuery: (query: string) => void;
+  };
+
+const Menu = ({query, setQuery}: HeaderProps) =>{
     
     return <div className={style.container} > 
         <img src={imagen} alt="Logo Nueva acropolis" className={style.container_logo}></img>
@@ -19,9 +22,8 @@ const Menu = ( headProps) =>{
             type="text" 
             name="buscar"
             placeholder="¿que libro estas buscando?"   
-            onChange={ev => setBusqueda(ev.target.value)}         
-        />
-    
+            onChange={ev => setQuery(ev.target.value)}         
+        />  
         </div>
     </div>
 }

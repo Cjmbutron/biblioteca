@@ -1,6 +1,7 @@
 import Listalibros from "./Listalibros"
 
 const Inicio =()=>{
+    
     return <Listalibros/>
 }
 

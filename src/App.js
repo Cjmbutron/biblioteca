@@ -10,7 +10,6 @@ function App() {
   return (
     
     <Router>
-      <Menu/>
       <Routes>
         <Route path ='/' element={<Inicio/>} />
       </Routes>

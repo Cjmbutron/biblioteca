@@ -1,33 +1,41 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Libros from '../api/Api';
-import styles from "../estilos/libro.module.css"
+import styles from "../estilos/listalibros.module.css"
 import imglibro from  "../img/libro.jpeg"
 import Formulario from '../componentes/formulario';
 import data from "../db.json"
 import Libro from '../componentes/libro';
+import bdbiBibliotecaHPB from "../bdbibliotecaHPB.json"
+import Menu from '../componentes/menu';
+import { Link } from 'react-router-dom';
 
 const imagenes ="..portadas"
 
 const Listalibros = () => {
+  const [query, setQuery] = useState("");
 
-    return <div>
-      {data.libros.map((prop)=>{
-        return <div>
-          <Libro
-            key={prop.id}
-            id={prop.id}
-            titulo={prop.titulo}
-            autor={prop.autor}
-            descripciones={prop.descripciones}
-            img={prop.img}
-          />
-       </div>
-        })
-           }  
-         
+  const filtroslibros = bdbiBibliotecaHPB.Libros.filter((ev) => {
+    return ev.titulo.toLowerCase().match(query.toLowerCase());
+  });
 
-        </div>
+    return<>
+        <Menu query={query} setQuery={setQuery} />
+        <main className={styles.container}>
+              {filtroslibros.map((prop)=>(
+                <div>
+                  <Libro
+                    key={prop.codigo}
+                    id={prop.codigo}
+                    titulo={prop.titulo}
+                    autor={prop.autor}
+                    codigo={prop.codigo}
+                    img={prop.img}
+                  />
+              </div>
+                ))}  
+        </main>
+    </>
 }
 
 export default Listalibros
