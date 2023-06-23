@@ -37,7 +37,7 @@
 }
 .container input{
     margin-top: 10px;
-    max-width: 300px;
+    max-width: 500px;
     position: relative;
     justify-content: flex-end;
 }
